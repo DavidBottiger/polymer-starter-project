@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 bower_components/
 build/
 node_modules/
+=======
+/node_modules
+/www/css/all.css
+.idea/
+>>>>>>> d84452a9c4278c33e487836565baecbb306e045c

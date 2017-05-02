@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "polymer-starter-kit",
   "license": "BSD-3-Clause",
   "devDependencies": {
@@ -9,5 +10,22 @@
   "scripts": {
     "lint": "eslint . --ext js,html --ignore-path .gitignore",
     "test": "npm run lint && polymer test"
+=======
+  "name": "suw16",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "*",
+    "bower": "^1.8.0",
+    "compression": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "gulp": "*",
+    "gulp-clean-css": "*",
+    "gulp-less": "*",
+    "polymer": "^2.0.0",
+    "polymer-cli": "^0.18.1",
+    "serve-favicon": "*"
+>>>>>>> d84452a9c4278c33e487836565baecbb306e045c
   }
 }
