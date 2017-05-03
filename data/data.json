@@ -4,7 +4,13 @@
 		"last_seen":"2017-05-02T14:11:19.926Z",
 		"local_ip":"103.245.4.110",
 		"remote_ip":"127.345.6.128",
-		"router_image_url" : "router-image.png"
+		"images": {
+			"router_image":{
+				"img": "router-image.png",
+				"description": "En router."
+			}
+		},
+
 		"objects":[
 			{
 				"object_id":"1001",
