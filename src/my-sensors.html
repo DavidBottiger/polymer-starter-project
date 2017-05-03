@@ -30,7 +30,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <template is="dom-repeat" items="[[storage]]">
         <p>{{item.name}}</p>
         <p>{{item.remote_ip}}</p>
-        <p>{{item.objects[0]}}</p>
+        <p>{{ item.objects[0] }}</p>
       </template>
 
       <iron-ajax
