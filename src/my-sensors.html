@@ -9,6 +9,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-sensors">
@@ -22,17 +25,49 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <div class="card">
       <h1>Sensorer</h1>
-      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.</p>
+
+
+
+      <template is="dom-repeat" items="[[storage]]">
+        <p>{{item.name}}</p>
+        <p>{{item.remote_ip}}</p>
+        <template is="dom-repeat" items="[[item.sensors]]">
+          <div>Sensor: <b>{{item.sensor_id}}</b></div>
+        </template>
+      </template>
+
+      <iron-ajax
+              id="requestData"
+              url="https://api.myjson.com/bins/7m6h9"
+              handle-as="json"
+              on-response="handleResponse">
+      </iron-ajax>
+
     </div>
   </template>
 
   <script>
-    class MySensors extends Polymer.Element {
-        // load data locally from data/data.json
+      Polymer({
+          is: 'my-sensors',
+          properties: {
+              storage: {
+                  type: Object
+              }
+          },
+          ready: function () {
+              this.$.requestData.generateRequest();
+          },
+          handleResponse: function (data) {
+              this.storage = data.detail.response;
+          }
+      });
 
+      /*
+    class MySensors extends Polymer.Element {
         static get is() { return 'my-sensors'; }
     }
 
     window.customElements.define(MySensors.is, MySensors);
+    */
   </script>
 </dom-module>
