@@ -71,12 +71,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <app-header slot="header" condenses reveals effects="waterfall">
           <app-toolbar>
             <!-- <paper-icon-button icon="my-icons:menu" drawer-toggle></paper-icon-button> -->
-            <main-title main-title>Openlogger Setup</main-title>
-          </app-toolbar>
-          <iron-selector selected="[[page]]" attr-for-selected="name" class="menu-list" role="navigation">
+            <main-title main-title>OPENLOGGER SETUP</main-title>
+            <iron-selector selected="[[page]]" attr-for-selected="name" class="menu-list" role="navigation">
             <a name="sensors" href="/sensors">Sensorer</a>
-            <a name="view2" href="/view2">Hjälp</a>
+            <a name="help" href="/help">Hjälp</a>
           </iron-selector>
+          </app-toolbar>
+          
         </app-header>
 
         <iron-pages
@@ -85,7 +86,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             fallback-selection="view404"
             role="main">
           <my-sensors name="sensors"></my-sensors>
-          <my-view2 name="view2"></my-view2>
+          <my-help name="help"></my-help>
           <my-view3 name="view3"></my-view3>
           <my-view404 name="view404"></my-view404>
         </iron-pages>
