@@ -1,37 +1,48 @@
-{
-	"name": "Polymer Project",
-	"last_seen":"",
-	"local_ip":"",
-	"remote_ip":"",
-	"objects":[
-		{"object_id":"1001",
-		 "object_name":"OL Lab",
-		 "sensors":[""]},
-		 {"object_id":"1002",
-		 "object_name":"Shipyard",
-		 "sensors":[""]},
-		 {"object_id":"1003",
-		 "object_name":"Serverrum",
-		 "sensors":[""]}
-		 ],
-	"sensors":[
-		{"sensor_id":"2853537C04000096",
-		 "latest_value":"",
-		 "type":"temp",
-		 "last_read":"2017-05-02T14:11:19.926Z",
-		 "object_id":"1001"
-		},
-		{"sensor_id":"28DD1CB202000014",
-		 "latest_value":"",
-		 "type":"CO2",
-		 "last_read":"2017-05-02T14:02:19.926Z",
-		 "object_id":"1002"
-		},
-		{"sensor_id":"28E1E1B102000046",
-		 "latest_value":"",
-		 "type":"serv",
-		 "last_read":"2017-05-02T14:04:19.926Z",
-		 "object_id":"1003"
-		}
-	]
-}
+[
+	{
+		"name": "Polymer Project",
+		"last_seen":"123",
+		"local_ip":"123.345.6.123",
+		"remote_ip":"123.345.6.123",
+		"objects":[
+			{
+				"object_id":"1001",
+				 "object_name":"OL Lab",
+				"sensors":["2853537C04000096"]
+			},
+			{
+				"object_id":"1002",
+				"object_name":"Shipyard",
+				"sensors":["28DD1CB202000014"]
+			},
+			{
+				"object_id":"1003",
+				"object_name":"Serverrum",
+				"sensors":["28E1E1B102000046"]
+			}
+		],
+		"sensors":[
+			{
+				"sensor_id":"2853537C04000096",
+				"latest_value":"23",
+				"type":"temp",
+				"last_read":"2017-05-02T14:11:19.926Z",
+				"object_id":"1001"
+			},
+			{
+				"sensor_id":"28DD1CB202000014",
+				"latest_value":"",
+				"type":"CO2",
+				"last_read":"2017-05-02T14:02:19.926Z",
+				"object_id":"1002"
+			},
+			{
+				"sensor_id":"28E1E1B102000046",
+				"latest_value":"",
+				"type":"serv",
+				"last_read":"2017-05-02T14:04:19.926Z",
+				"object_id":"1003"
+			}
+		]
+	}
+]
