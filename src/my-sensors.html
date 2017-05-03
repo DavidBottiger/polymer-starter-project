@@ -26,11 +26,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="card">
       <h1>Sensorer</h1>
 
-      Output:
+
+
       <template is="dom-repeat" items="[[storage]]">
         <p>{{item.name}}</p>
         <p>{{item.remote_ip}}</p>
-        <p>{{ item.objects[0] }}</p>
+        <template is="dom-repeat" items="[[item.sensors]]">
+          <div>Sensor: <b>{{item.sensor_id}}</b></div>
+        </template>
       </template>
 
       <iron-ajax
@@ -40,7 +43,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               on-response="handleResponse">
       </iron-ajax>
 
-      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.</p>
     </div>
   </template>
 
@@ -49,7 +51,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           is: 'my-sensors',
           properties: {
               storage: {
-                  type: Array
+                  type: Object
               }
           },
           ready: function () {

@@ -1,9 +1,10 @@
 [
 	{
 		"name": "Polymer Project",
-		"last_seen":"123",
-		"local_ip":"123.345.6.123",
-		"remote_ip":"123.345.6.123",
+		"last_seen":"2017-05-02T14:11:19.926Z",
+		"local_ip":"103.245.4.110",
+		"remote_ip":"127.345.6.128",
+		"router_image_url" : "router-image.png"
 		"objects":[
 			{
 				"object_id":"1001",
